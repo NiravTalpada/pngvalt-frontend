@@ -1,0 +1,21 @@
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;  
+    height: 50px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 50px;
+    font-family: 'Roboto Slab', serif ;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 0px 12px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.3);
+}
+.copyrightText p{
+    margin: 0;
+}

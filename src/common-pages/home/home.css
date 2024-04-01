@@ -1,0 +1,168 @@
+.table-responsive .custome-table{
+    width: 100%;
+    margin: 0 auto;
+}
+.main{
+    position: relative;
+    width: 100%;
+}
+.main h2{
+    text-decoration: underline;
+    margin: 50px 0 20px 0;
+    font-size: 26px;
+    font-family: 'Roboto Slab', serif ;
+}
+.slick-slide .image-slider{
+    position: relative;
+    height: 600px;
+}
+.slick-slide .image-overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.87);
+    height: 600px;
+    width: 100%;
+    opacity: 0.5;
+}
+.slick-slide img{
+    position: absolute;
+    object-fit: cover;
+    height: 100%; 
+    width : 100%;
+    min-height: 600px;
+}
+.slick-slide .slider-text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    height: 600px;
+    width: 50%;
+    margin-left: 50px;
+}
+.slick-slide .slider-text h1,.slick-slide .slider-text p{
+    color: #fff;
+}
+.slick-slide .slider-text p{
+    font-size: 18px;
+}
+.main .image-list{ 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    
+}
+.main .image-list .images{
+    position: relative;
+    transition: transform .1s;
+    height: 260px;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.main .image-list .images .pricing-tag{
+    position: absolute;
+    top : 10px;
+    left: 10px;
+    transition: transform .1s;
+    color: #fff;
+    /* background-image: url(../../images/pricing-tag.png); */
+    /* background-size: 100%; */
+    /* background-repeat: no-repeat; */
+    /* padding: 15px 15px; */
+    z-index: 9;
+}
+.main .image-list .images .pricing-tag:hover{
+    transform: scale(2.1);
+    cursor: pointer;
+}
+.main .image-list .image{
+    width : 100%;
+    height : 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+.main .image-list .images .image-details{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+.main .image-list .images .image-details span{
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Roboto Slab', serif ;
+}
+.main .image-list .images .image-details p{
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Roboto Slab', serif;
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3
+}
+.main .image-list .images:hover{
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+.main .image-list .images:hover .pricing-tag{
+    animation: pricingtag 2s infinite;
+}
+
+@keyframes pricingtag {
+    50% {transform: rotate(180deg);}
+}
+.main .image-list .images:hover .image-details{
+    display: block;
+    /* transform: scale(1.1); */
+    padding: 5px 10px;
+}
+.image-model .model-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+}
+.image-model .model-content .model-image{
+    width: 50%;
+    object-fit: cover;
+    position: relative;
+}
+.image-model .model-content .model-image .pricing-tag{
+    position: absolute;
+    top : 20px;
+    left: 0;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 0 10px 10px 0;
+    font-family: 'Roboto Slab', serif ;
+    font-size: 20px;
+}
+.image-model .model-content .model-text{
+    width: 50%;
+    padding: 30px;
+    font-family: 'Roboto Slab', serif ;
+}
+.image-model .model-content .model-image img{
+    width: 100%;
+    height: 800px;
+}
+.image-model .model-content .model-button{ gap: 20px; display: flex; flex-direction: row; justify-content: center;margin: 50px 0;}
+.image-model .model-content .model-button button{
+    width: 200px;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+} 
